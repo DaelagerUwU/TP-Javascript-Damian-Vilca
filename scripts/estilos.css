@@ -1,0 +1,116 @@
+ :root {
+     --bg: #0f1724;
+     --panel: #081029;
+     --snake: #68d391;
+     --head: #2f855a;
+     --food: #ff6b6b;
+     --text: #e6eef8;
+     --accent: #60a5fa;
+ }
+
+ * {
+     box-sizing: border-box;
+ }
+
+ body {
+     margin: 0;
+     font-family: Inter, system-ui, sans-serif;
+     background: linear-gradient(180deg, var(--bg), #071526);
+     color: var(--text);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     min-height: 100vh;
+     padding: 20px;
+ }
+
+ .card {
+     background: linear-gradient(180deg, var(--panel), rgba(255, 255, 255, 0.02));
+     border-radius: 12px;
+     padding: 16px;
+     box-shadow: 0 8px 30px rgba(2, 6, 23, 0.6);
+     width: 420px;
+ }
+
+ header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 8px;
+     margin-bottom: 8px;
+ }
+
+ h1 {
+     font-size: 18px;
+     margin: 0;
+     letter-spacing: 0.4px;
+ }
+
+ .controls {
+     display: flex;
+     gap: 8px;
+     align-items: center;
+ }
+
+ button {
+     background: var(--accent);
+     color: white;
+     border: none;
+     padding: 8px 10px;
+     border-radius: 8px;
+     cursor: pointer;
+     font-weight: 600;
+ }
+
+ button.secondary {
+     background: transparent;
+     border: 1px solid rgba(255, 255, 255, 0.06);
+ }
+
+ .info {
+     font-size: 13px;
+     color: rgba(230, 238, 248, 0.9);
+ }
+
+ canvas {
+     display: block;
+     margin: 10px auto;
+     background: #041024;
+     border-radius: 8px;
+ }
+
+ .hud {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 8px;
+     margin-top: 8px;
+ }
+
+ .score {
+     font-size: 14px;
+     background: rgba(255, 255, 255, 0.03);
+     padding: 6px 8px;
+     border-radius: 8px;
+ }
+
+ .touch-pad {
+     display: flex;
+     gap: 6px;
+     justify-content: center;
+     margin-top: 10px;
+ }
+
+ .touch-pad button {
+     width: 44px;
+     height: 44px;
+     padding: 0;
+     font-size: 18px;
+     border-radius: 8px;
+ }
+
+ @media (max-width:480px) {
+     .card {
+         width: 96%;
+     }
+ }
