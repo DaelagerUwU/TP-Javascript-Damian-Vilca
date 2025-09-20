@@ -7,34 +7,13 @@
   <title>Snake2.io</title>
 </head>
 <body>
-  <div class="card">
-    <header>
-      <h1>Viborita — ¡TP de HTML + JS! OwO</h1>
-      <div class="controls">
-        <button id="startBtn">Empezar</button>
-        <button id="pauseBtn" class="secondary">Pausa</button>
-      </div>
-    </header>
-
-    <canvas id="game" width="400" height="400"></canvas>
-
-    <div class="hud">
-      <div class="score">Puntaje: <span id="score">0</span></div>
-      <div class="info">Vel: <span id="speedLabel">10</span> fps</div>
+  <div class="wrapper">
+    <div class="game-details">
+      <div class="score">Score: 0</div>
+      <div class="high-score">Highscore:</div>
     </div>
+    <div class="play-board">
 
-    <div style="font-size:13px; color:rgba(230,238,248,0.85); margin-top:8px;">
-      Controles: Flechas / WASD. Evita chocar. Come la comida 🍎. ¡Diviértanse juntos! Nya~ :3
-    </div>
-
-    <!-- Botones táctiles (útil en celular) -->
-    <div class="touch-pad" aria-hidden="true" style="margin-top:12px;">
-      <button id="upBtn">↑</button>
-    </div>
-    <div class="touch-pad" aria-hidden="true">
-      <button id="leftBtn">←</button>
-      <button id="downBtn">↓</button>
-      <button id="rightBtn">→</button>
     </div>
   </div>
   <script src="scripts/script.js"></script>
